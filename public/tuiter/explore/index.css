@@ -11,7 +11,7 @@ body {
   border-width: 1px;
   border-color: lightgray;
   border-style: groove;
-  width: 50%;
+  max-width: 800px;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -101,7 +101,7 @@ body {
 }
 
 .wd-flex-trending-outline {
-  border-style: groove;
+  border-top-style: groove;
   border-width: 1px;
   flex-direction: column;
   color: white;
@@ -135,7 +135,7 @@ body {
   display: flex;
   padding-block: 10px;
   border-width: 1px;
-  border-style: groove;
+  border-top-style: groove;
 }
 
 .wd-flex-suggested-content-title {
