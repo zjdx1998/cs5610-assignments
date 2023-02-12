@@ -1,0 +1,92 @@
+.wd-nav-icon {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 3px;
+    margin-right: 10px;
+}
+
+.wd-search-bar-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.wd-follow-icon {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 3px;
+}
+
+.fa-twitter, .fa-twitter-square {
+    color: #00aced
+}
+
+.wd-twitter-color {
+    color: #00aced
+}
+
+.wd-twitter-bg-color {
+    background-color: #00aced
+}
+
+.wd-bottom-left {
+    position: absolute;
+    bottom: 4px;
+    left: 8px;
+}
+
+.wd-text-over-picture-bl {
+    font-size: 2em;
+    color: white;
+}
+
+.list-group-item {
+    border: 0;
+}
+
+.list-group-item.active {
+    background-color: transparent;
+    border-color: transparent;
+    font-weight: bold;
+}
+
+div#navigation {
+    font-size: 21px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+div#navigation .list-group-item {
+    padding: 12px;
+}
+
+.btn-primary {
+    border-color: #00aced;
+    background-color: #00aced;
+}
+
+input#search-input {
+    padding: 10px 0 10px 4px;
+    border-color: rgb(118, 118, 118);
+    background-color: rgb(237, 241, 242);
+}
+
+#search-input::placeholder {
+    color: rgb(83,100,113);
+}
+
+div#search-input-bar {
+    border-color: rgb(118, 118, 118);
+    background-color: rgb(237, 241, 242);
+    margin-right: 20px;
+}
+
+div#main-panel {
+    border-left-style: ridge;
+    border-right-style: ridge;
+    border-width: 1px;
+    border-color: rgb(237,241,242);
+}
+
+div#search-bar-panel {
+    padding: 0 16px 0 16px;
+}
