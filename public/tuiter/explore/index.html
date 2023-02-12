@@ -61,7 +61,7 @@
         </button>
     </div>
 <!--    main panel-->
-    <div id="main-panel" class="col column ms-2">
+    <div id="main-panel" class="col" style="padding: 0">
       <div id = "search-bar-panel" class="row align-items-center">
         <div id = "search-input-bar" class="col rounded-pill border">
           <label for="search-input" class="ps-2">
@@ -75,39 +75,74 @@
           </a>
         </div>
       </div>
-      <ul class="nav nav-tabs mt-2" style="margin-left: -10px">
+      <ul class="nav nav-tabs mt-2 justify-content-between">
         <li class="nav-item">
-          <a class="nav-link active" href="for-you.html">For you</a>
+          <div style="padding: 8px 16px 0px 16px">
+            <a class="nav-link active" href="for-you.html">For you</a>
+          </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link wd-twitter-color" href="trending.html">Trending</a>
+          <a class="nav-link" href="trending.html">Trending</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link wd-twitter-color" href="news.html">News</a>
+          <a class="nav-link" href="news.html">News</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link wd-twitter-color" href="sports.html" tabindex="-1">Sports</a>
+          <a class="nav-link" href="sports.html" tabindex="-1">Sports</a>
         </li>
         <li class="nav-item d-none d-md-block">
-          <a class="nav-link wd-twitter-color" href="entertainment.html" tabindex="-1">Entertainment</a>
+          <a class="nav-link" href="entertainment.html" tabindex="-1">Entertainment</a>
         </li>
       </ul>
-      <ul class="list-group mt-2" style="margin-left: -10px">
+      <ul class="list-group mt-2">
         <li class="list-group-item p-0">
           <div class="card col-12 p-0">
             <img src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg" class="w-100" />
+            <div class="wd-text-over-picture-normal wd-bottom-lb-2">C++ is Best · Live</div>
             <div class="wd-text-over-picture-bl wd-bottom-left">SpaceX's Starship</div>
           </div>
         </li>
         <li class="list-group-item">
           <div class="row align-items-start">
             <div class="col ms-2">
-              <div class="row text-black-50">Web Development</div>
+              <div class="row wd-font-default">Trending</div>
+              <div class="row overflow-hidden">
+                <b class="col-auto p-0 overflow-hidden" style="max-width: 70%">Daily Mail</b>
+              </div>
+              <div class="row wd-font-default overflow-hidden">
+                19K Tweets
+              </div>
+            </div>
+            <div class="col-auto align-self-center">
+              <svg class="wd-search-bar-icon"><g><path d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"></path></g></svg>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="row align-items-start">
+            <div class="col ms-2">
+              <div class="row wd-font-default">Sports · Trending</div>
+              <div class="row overflow-hidden">
+                <b class="col-auto p-0 overflow-hidden" style="max-width: 70%">ICPC</b>
+              </div>
+              <div class="row wd-font-default overflow-hidden">
+                231K Tweets
+              </div>
+            </div>
+            <div class="col-auto align-self-center">
+              <svg class="wd-search-bar-icon"><g><path d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"></path></g></svg>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="row align-items-start">
+            <div class="col ms-2">
+              <div class="row wd-font-default">Web Development</div>
               <div class="row overflow-hidden">
                 <b class="col-auto p-0 overflow-hidden" style="max-width: 70%">ReactJS</b>
                 <div class="col-4 p-0">
                   <svg role="img" class="wd-follow-icon" data-testid="icon-verified"><g><path d="M22.25 12c0-1.43-.88-2.67-2.19-3.34.46-1.39.2-2.9-.81-3.91s-2.52-1.27-3.91-.81c-.66-1.31-1.91-2.19-3.34-2.19s-2.67.88-3.33 2.19c-1.4-.46-2.91-.2-3.92.81s-1.26 2.52-.8 3.91c-1.31.67-2.2 1.91-2.2 3.34s.89 2.67 2.2 3.34c-.46 1.39-.21 2.9.8 3.91s2.52 1.26 3.91.81c.67 1.31 1.91 2.19 3.34 2.19s2.68-.88 3.34-2.19c1.39.45 2.9.2 3.91-.81s1.27-2.52.81-3.91c1.31-.67 2.19-1.91 2.19-3.34zm-11.71 4.2L6.8 12.46l1.41-1.42 2.26 2.26 4.8-5.23 1.47 1.36-6.2 6.77z"></path></g></svg>
-                  <span class="text-black-50 d-inline"> - 2h</span>
+                  <span class="wd-font-default d-inline"> - 2h</span>
                 </div>
               </div>
               <div class="row overflow-hidden">
@@ -126,13 +161,13 @@
                 <b class="col-auto p-0 overflow-hidden" style="max-width: 70%">JavaScript</b>
                 <div class="col-4 p-0">
                   <svg role="img" class="wd-follow-icon" data-testid="icon-verified"><g><path d="M22.25 12c0-1.43-.88-2.67-2.19-3.34.46-1.39.2-2.9-.81-3.91s-2.52-1.27-3.91-.81c-.66-1.31-1.91-2.19-3.34-2.19s-2.67.88-3.33 2.19c-1.4-.46-2.91-.2-3.92.81s-1.26 2.52-.8 3.91c-1.31.67-2.2 1.91-2.2 3.34s.89 2.67 2.2 3.34c-.46 1.39-.21 2.9.8 3.91s2.52 1.26 3.91.81c.67 1.31 1.91 2.19 3.34 2.19s2.68-.88 3.34-2.19c1.39.45 2.9.2 3.91-.81s1.27-2.52.81-3.91c1.31-.67 2.19-1.91 2.19-3.34zm-11.71 4.2L6.8 12.46l1.41-1.42 2.26 2.26 4.8-5.23 1.47 1.36-6.2 6.77z"></path></g></svg>
-                  <span class="text-black-50 d-inline"> - 2h</span>
+                  <span class="wd-font-default d-inline"> - 2h</span>
                 </div>
               </div>
               <div class="row overflow-hidden">
                 <b class="col-auto p-0 overflow-hidden" style="max-width: 100%">JavaScript is programming language that can run on browsers as well as desktops</b>
               </div>
-              <div class="row text-black-50 overflow-hidden">
+              <div class="row wd-font-default overflow-hidden">
                 123K Tweets
               </div>
             </div>
@@ -144,11 +179,11 @@
         <li class="list-group-item">
           <div class="row align-items-start">
             <div class="col ms-2">
-              <div class="row text-black-50">Web Development</div>
+              <div class="row wd-font-default">Web Development</div>
               <div class="row overflow-hidden">
                 <b class="col-auto p-0 overflow-hidden" style="max-width: 70%">jQuery</b>
               </div>
-              <div class="row text-black-50 overflow-hidden">
+              <div class="row wd-font-default overflow-hidden">
                 123K Tweets
               </div>
             </div>
@@ -160,15 +195,15 @@
         <li class="list-group-item">
           <div class="row align-items-start">
             <div class="col ms-2">
-              <div class="row text-black-50">Web Development</div>
+              <div class="row wd-font-default">Web Development</div>
               <div class="row overflow-hidden">
                 <b class="col-auto p-0 overflow-hidden" style="max-width: 70%">NodeJS</b>
                 <div class="col-4 p-0">
                   <svg role="img" class="wd-follow-icon" data-testid="icon-verified"><g><path d="M22.25 12c0-1.43-.88-2.67-2.19-3.34.46-1.39.2-2.9-.81-3.91s-2.52-1.27-3.91-.81c-.66-1.31-1.91-2.19-3.34-2.19s-2.67.88-3.33 2.19c-1.4-.46-2.91-.2-3.92.81s-1.26 2.52-.8 3.91c-1.31.67-2.2 1.91-2.2 3.34s.89 2.67 2.2 3.34c-.46 1.39-.21 2.9.8 3.91s2.52 1.26 3.91.81c.67 1.31 1.91 2.19 3.34 2.19s2.68-.88 3.34-2.19c1.39.45 2.9.2 3.91-.81s1.27-2.52.81-3.91c1.31-.67 2.19-1.91 2.19-3.34zm-11.71 4.2L6.8 12.46l1.41-1.42 2.26 2.26 4.8-5.23 1.47 1.36-6.2 6.77z"></path></g></svg>
-                  <span class="text-black-50 d-inline"> - 2h</span>
+                  <span class="wd-font-default d-inline"> - 2h</span>
                 </div>
               </div>
-              <div class="row text-black-50 overflow-hidden">
+              <div class="row wd-font-default overflow-hidden">
                 123K Tweets
               </div>
             </div>
@@ -180,10 +215,10 @@
       </ul>
     </div>
 <!--    follow panel-->
-    <div class="col-4 column d-none d-lg-block">
-      <ul class="list-group">
+    <div class="col-4 column d-none d-lg-block" style="padding: 20px 0px 0 16px">
+      <ul id = "follows-group" class="list-group">
         <li class="list-group-item">
-          <b>Who to follow</b>
+          <h4>Who to follow</h4>
         </li>
         <li class="list-group-item">
           <div class="row align-items-center">
@@ -192,7 +227,7 @@
               <div class="row overflow-hidden">
                 <b class="col-auto p-0 overflow-hidden" style="max-width: 80%">Java</b>
                 <div class="col-1 p-0">
-                  <svg role="img" class="wd-follow-icon" data-testid="icon-verified"><g><path d="M22.25 12c0-1.43-.88-2.67-2.19-3.34.46-1.39.2-2.9-.81-3.91s-2.52-1.27-3.91-.81c-.66-1.31-1.91-2.19-3.34-2.19s-2.67.88-3.33 2.19c-1.4-.46-2.91-.2-3.92.81s-1.26 2.52-.8 3.91c-1.31.67-2.2 1.91-2.2 3.34s.89 2.67 2.2 3.34c-.46 1.39-.21 2.9.8 3.91s2.52 1.26 3.91.81c.67 1.31 1.91 2.19 3.34 2.19s2.68-.88 3.34-2.19c1.39.45 2.9.2 3.91-.81s1.27-2.52.81-3.91c1.31-.67 2.19-1.91 2.19-3.34zm-11.71 4.2L6.8 12.46l1.41-1.42 2.26 2.26 4.8-5.23 1.47 1.36-6.2 6.77z"></path></g></svg>
+                  <svg role="img" class="wd-follow-icon" data-testid="icon-verified"><g><path fill="#00aced" d="M22.25 12c0-1.43-.88-2.67-2.19-3.34.46-1.39.2-2.9-.81-3.91s-2.52-1.27-3.91-.81c-.66-1.31-1.91-2.19-3.34-2.19s-2.67.88-3.33 2.19c-1.4-.46-2.91-.2-3.92.81s-1.26 2.52-.8 3.91c-1.31.67-2.2 1.91-2.2 3.34s.89 2.67 2.2 3.34c-.46 1.39-.21 2.9.8 3.91s2.52 1.26 3.91.81c.67 1.31 1.91 2.19 3.34 2.19s2.68-.88 3.34-2.19c1.39.45 2.9.2 3.91-.81s1.27-2.52.81-3.91c1.31-.67 2.19-1.91 2.19-3.34zm-11.71 4.2L6.8 12.46l1.41-1.42 2.26 2.26 4.8-5.23 1.47 1.36-6.2 6.77z"></path></g></svg>
                 </div>
               </div>
               <div class="row overflow-hidden">
@@ -211,7 +246,7 @@
               <div class="row overflow-hidden">
                 <b class="col-auto p-0 overflow-hidden" style="max-width: 88%">Relativity Space</b>
                 <div class="col-1 p-0">
-                  <svg role="img" class="wd-follow-icon" data-testid="icon-verified"><g><path d="M22.25 12c0-1.43-.88-2.67-2.19-3.34.46-1.39.2-2.9-.81-3.91s-2.52-1.27-3.91-.81c-.66-1.31-1.91-2.19-3.34-2.19s-2.67.88-3.33 2.19c-1.4-.46-2.91-.2-3.92.81s-1.26 2.52-.8 3.91c-1.31.67-2.2 1.91-2.2 3.34s.89 2.67 2.2 3.34c-.46 1.39-.21 2.9.8 3.91s2.52 1.26 3.91.81c.67 1.31 1.91 2.19 3.34 2.19s2.68-.88 3.34-2.19c1.39.45 2.9.2 3.91-.81s1.27-2.52.81-3.91c1.31-.67 2.19-1.91 2.19-3.34zm-11.71 4.2L6.8 12.46l1.41-1.42 2.26 2.26 4.8-5.23 1.47 1.36-6.2 6.77z"></path></g></svg>
+                  <svg role="img" class="wd-follow-icon" data-testid="icon-verified"><g><path fill="#00aced" d="M22.25 12c0-1.43-.88-2.67-2.19-3.34.46-1.39.2-2.9-.81-3.91s-2.52-1.27-3.91-.81c-.66-1.31-1.91-2.19-3.34-2.19s-2.67.88-3.33 2.19c-1.4-.46-2.91-.2-3.92.81s-1.26 2.52-.8 3.91c-1.31.67-2.2 1.91-2.2 3.34s.89 2.67 2.2 3.34c-.46 1.39-.21 2.9.8 3.91s2.52 1.26 3.91.81c.67 1.31 1.91 2.19 3.34 2.19s2.68-.88 3.34-2.19c1.39.45 2.9.2 3.91-.81s1.27-2.52.81-3.91c1.31-.67 2.19-1.91 2.19-3.34zm-11.71 4.2L6.8 12.46l1.41-1.42 2.26 2.26 4.8-5.23 1.47 1.36-6.2 6.77z"></path></g></svg>
                 </div>
               </div>
               <div class="row overflow-hidden">
@@ -230,7 +265,7 @@
               <div class="row overflow-hidden">
                 <b class="col-auto p-0 overflow-hidden" style="max-width: 80%">Virgin Galactic</b>
                 <div class="col-1 p-0">
-                  <svg role="img" class="wd-follow-icon" data-testid="icon-verified"><g><path d="M22.25 12c0-1.43-.88-2.67-2.19-3.34.46-1.39.2-2.9-.81-3.91s-2.52-1.27-3.91-.81c-.66-1.31-1.91-2.19-3.34-2.19s-2.67.88-3.33 2.19c-1.4-.46-2.91-.2-3.92.81s-1.26 2.52-.8 3.91c-1.31.67-2.2 1.91-2.2 3.34s.89 2.67 2.2 3.34c-.46 1.39-.21 2.9.8 3.91s2.52 1.26 3.91.81c.67 1.31 1.91 2.19 3.34 2.19s2.68-.88 3.34-2.19c1.39.45 2.9.2 3.91-.81s1.27-2.52.81-3.91c1.31-.67 2.19-1.91 2.19-3.34zm-11.71 4.2L6.8 12.46l1.41-1.42 2.26 2.26 4.8-5.23 1.47 1.36-6.2 6.77z"></path></g></svg>
+                  <svg role="img" class="wd-follow-icon" data-testid="icon-verified"><g><path fill="#00aced" d="M22.25 12c0-1.43-.88-2.67-2.19-3.34.46-1.39.2-2.9-.81-3.91s-2.52-1.27-3.91-.81c-.66-1.31-1.91-2.19-3.34-2.19s-2.67.88-3.33 2.19c-1.4-.46-2.91-.2-3.92.81s-1.26 2.52-.8 3.91c-1.31.67-2.2 1.91-2.2 3.34s.89 2.67 2.2 3.34c-.46 1.39-.21 2.9.8 3.91s2.52 1.26 3.91.81c.67 1.31 1.91 2.19 3.34 2.19s2.68-.88 3.34-2.19c1.39.45 2.9.2 3.91-.81s1.27-2.52.81-3.91c1.31-.67 2.19-1.91 2.19-3.34zm-11.71 4.2L6.8 12.46l1.41-1.42 2.26 2.26 4.8-5.23 1.47 1.36-6.2 6.77z"></path></g></svg>
                 </div>
               </div>
               <div class="row overflow-hidden">
@@ -249,7 +284,7 @@
               <div class="row overflow-hidden">
                 <b class="col-auto p-0 overflow-hidden" style="max-width: 80%">NASA</b>
                 <div class="col-1 p-0">
-                  <svg role="img" class="wd-follow-icon" data-testid="icon-verified"><g><path d="M22.25 12c0-1.43-.88-2.67-2.19-3.34.46-1.39.2-2.9-.81-3.91s-2.52-1.27-3.91-.81c-.66-1.31-1.91-2.19-3.34-2.19s-2.67.88-3.33 2.19c-1.4-.46-2.91-.2-3.92.81s-1.26 2.52-.8 3.91c-1.31.67-2.2 1.91-2.2 3.34s.89 2.67 2.2 3.34c-.46 1.39-.21 2.9.8 3.91s2.52 1.26 3.91.81c.67 1.31 1.91 2.19 3.34 2.19s2.68-.88 3.34-2.19c1.39.45 2.9.2 3.91-.81s1.27-2.52.81-3.91c1.31-.67 2.19-1.91 2.19-3.34zm-11.71 4.2L6.8 12.46l1.41-1.42 2.26 2.26 4.8-5.23 1.47 1.36-6.2 6.77z"></path></g></svg>
+                  <svg role="img" class="wd-follow-icon" data-testid="icon-verified"><g><path fill="#00aced" d="M22.25 12c0-1.43-.88-2.67-2.19-3.34.46-1.39.2-2.9-.81-3.91s-2.52-1.27-3.91-.81c-.66-1.31-1.91-2.19-3.34-2.19s-2.67.88-3.33 2.19c-1.4-.46-2.91-.2-3.92.81s-1.26 2.52-.8 3.91c-1.31.67-2.2 1.91-2.2 3.34s.89 2.67 2.2 3.34c-.46 1.39-.21 2.9.8 3.91s2.52 1.26 3.91.81c.67 1.31 1.91 2.19 3.34 2.19s2.68-.88 3.34-2.19c1.39.45 2.9.2 3.91-.81s1.27-2.52.81-3.91c1.31-.67 2.19-1.91 2.19-3.34zm-11.71 4.2L6.8 12.46l1.41-1.42 2.26 2.26 4.8-5.23 1.47 1.36-6.2 6.77z"></path></g></svg>
                 </div>
               </div>
               <div class="row overflow-hidden">
@@ -268,7 +303,7 @@
               <div class="row overflow-hidden">
                 <b class="col-auto p-0 overflow-hidden" style="max-width: 80%">Tesla</b>
                 <div class="col-1 p-0">
-                  <svg role="img" class="wd-follow-icon" data-testid="icon-verified"><g><path d="M22.25 12c0-1.43-.88-2.67-2.19-3.34.46-1.39.2-2.9-.81-3.91s-2.52-1.27-3.91-.81c-.66-1.31-1.91-2.19-3.34-2.19s-2.67.88-3.33 2.19c-1.4-.46-2.91-.2-3.92.81s-1.26 2.52-.8 3.91c-1.31.67-2.2 1.91-2.2 3.34s.89 2.67 2.2 3.34c-.46 1.39-.21 2.9.8 3.91s2.52 1.26 3.91.81c.67 1.31 1.91 2.19 3.34 2.19s2.68-.88 3.34-2.19c1.39.45 2.9.2 3.91-.81s1.27-2.52.81-3.91c1.31-.67 2.19-1.91 2.19-3.34zm-11.71 4.2L6.8 12.46l1.41-1.42 2.26 2.26 4.8-5.23 1.47 1.36-6.2 6.77z"></path></g></svg>
+                  <svg role="img" class="wd-follow-icon" data-testid="icon-verified"><g><path fill="#00aced" d="M22.25 12c0-1.43-.88-2.67-2.19-3.34.46-1.39.2-2.9-.81-3.91s-2.52-1.27-3.91-.81c-.66-1.31-1.91-2.19-3.34-2.19s-2.67.88-3.33 2.19c-1.4-.46-2.91-.2-3.92.81s-1.26 2.52-.8 3.91c-1.31.67-2.2 1.91-2.2 3.34s.89 2.67 2.2 3.34c-.46 1.39-.21 2.9.8 3.91s2.52 1.26 3.91.81c.67 1.31 1.91 2.19 3.34 2.19s2.68-.88 3.34-2.19c1.39.45 2.9.2 3.91-.81s1.27-2.52.81-3.91c1.31-.67 2.19-1.91 2.19-3.34zm-11.71 4.2L6.8 12.46l1.41-1.42 2.26 2.26 4.8-5.23 1.47 1.36-6.2 6.77z"></path></g></svg>
                 </div>
               </div>
               <div class="row overflow-hidden">
@@ -280,6 +315,7 @@
             </button>
           </div>
         </li>
+        <li class="list-group-item"><a class="wd-twitter-color" style="text-decoration: none" href="#">Show more</a></li>
       </ul>
     </div>
   </div>
