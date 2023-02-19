@@ -1,47 +1,5 @@
-.wd-nav-icon {
-    width: 24px;
-    height: 24px;
-    margin-bottom: 3px;
-    margin-right: 5px;
-}
-
-.list-group-item.active {
-    font-weight: bold;
-}
-
-.wd-follow-icon {
-    width: 24px;
-    height: 24px;
-    margin-bottom: 3px;
-}
-
-ul#follows-group .btn-primary {
-    border-color: rgb(16, 20, 24);
-    background-color: rgb(16, 20, 24);
-}
-
-
-ul#follows-group {
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgb(237,241,242);
-    border-radius: 20px;
-}
-
-ul#follows-group .list-group-item {
-    background-color: rgb(237, 241, 242);
-    padding: 8px 16px 8px 16px;
-}
-
 .wd-font-default {
     color: rgb(70, 89, 101);
-}
-
-div#main-panel {
-    /*border-left-style: ridge;*/
-    /*border-right-style: ridge;*/
-    /*border-width: 1px;*/
-    border-color: rgb(237,241,242);
 }
 
 .wd-search-bar-icon {
@@ -49,6 +7,12 @@ div#main-panel {
     height: 24px;
 }
 
+
+.wd-follow-icon {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 3px;
+}
 
 .wd-nav-icon {
     width: 24px;
