@@ -1,3 +1,7 @@
+body {
+    font-family: "Helvetica";
+}
+
 .wd-nav-icon {
     width: 24px;
     height: 24px;
@@ -47,14 +51,6 @@ div#main-panel {
 .wd-search-bar-icon {
     width: 24px;
     height: 24px;
-}
-
-
-.wd-nav-icon {
-    width: 24px;
-    height: 24px;
-    margin-bottom: 3px;
-    margin-right: 10px;
 }
 
 div#navigation {

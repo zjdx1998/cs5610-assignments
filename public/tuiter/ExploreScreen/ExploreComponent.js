@@ -1,9 +1,8 @@
-import PostSummaryList from "../PostSummaryList/index.js";
-import { RemoveUndefined } from "../PostSummaryList/index.js";
+import PostSummaryList from "./PostSummaryList/index.js";
 
 const ExploreComponent = () => {
   return(`
-      <div id = "search-bar-panel" class="row align-items-center">
+      <div id = "search-bar-panel" class="row align-items-center mt-1">
         <div id = "search-input-bar" class="col rounded-pill border">
           <label for="search-input" class="ps-2">
             <i class="fa-sharp fa-solid fa-magnifying-glass" style="color: rgb(83, 100, 113)"></i>
@@ -46,5 +45,3 @@ const ExploreComponent = () => {
     `);
 }
 export default ExploreComponent;
-$("#wd-explore-screen-index").html(ExploreComponent());
-$(RemoveUndefined())
