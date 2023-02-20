@@ -1,7 +1,6 @@
 import NavigationSidebar from "../NavigationSidebar/index.js";
 import WhoToFollowList from "./WhoToFollowList/index.js";
 import ExploreComponent from "./ExploreComponent.js";
-import { RemoveUndefined } from "./PostSummaryList/index.js";
 
 function exploreComponent() {
   $("#wd-explore").append(`
@@ -22,4 +21,3 @@ function exploreComponent() {
    `);
 }
 $(exploreComponent);
-$(RemoveUndefined);

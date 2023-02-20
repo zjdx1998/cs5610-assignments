@@ -1,7 +1,6 @@
 import NavigationSidebar from "../NavigationSidebar/index.js";
 import PostSummaryList from "../ExploreScreen/PostSummaryList/index.js";
 import PostList from "../PostList/index.js";
-import { AdjustUndefined } from "../PostList/PostItem.js";
 
 const exploreComponent = () => {
   $("#wd-home").append(`
@@ -21,4 +20,3 @@ const exploreComponent = () => {
    `);
 }
 $(exploreComponent);
-$(AdjustUndefined);

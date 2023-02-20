@@ -1,5 +1,5 @@
 import posts from "./posts.js";
-import PostItem, { AdjustUndefined } from "./PostItem.js";
+import PostItem from "./PostItem.js";
 
 const PostList = () => {
   return `
@@ -15,4 +15,3 @@ const PostList = () => {
 
 export default PostList;
 $("#wd-post-list-index").html(PostList());
-$(AdjustUndefined());

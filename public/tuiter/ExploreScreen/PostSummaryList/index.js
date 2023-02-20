@@ -26,4 +26,3 @@ export const RemoveUndefined = () => {
 
 export default PostSummaryList;
 $("#wd-post-summary-list-index").html(PostSummaryList());
-$(RemoveUndefined());

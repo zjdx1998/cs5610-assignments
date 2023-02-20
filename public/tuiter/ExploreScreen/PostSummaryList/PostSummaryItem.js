@@ -14,7 +14,7 @@ const PostSummaryItem = (post) => {
               <div class="row overflow-hidden">
                 <b class="col-auto p-0 overflow-hidden" style="max-width: 100%">${post.title}</b>
               </div>
-              <div class="row wd-font-default overflow-hidden" id="post-tweets">
+              <div class="row wd-font-default overflow-hidden" id="post-tweets" style="${post.tweets ? '' : 'display:none'}">
                 ${post.tweets}
               </div>
             </div>
