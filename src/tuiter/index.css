@@ -63,6 +63,10 @@ div#navigation .list-group-item {
     padding: 12px;
 }
 
+.nav-pills .nav-link, .nav-tabs .nav-link {
+    color: rgb(0, 146, 232);
+}
+
 .nav-tabs .nav-link {
     color: rgb(70, 89, 101);
     border-style: none;
