@@ -1,0 +1,35 @@
+.wd-nav-icon {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 3px;
+    margin-right: 10px;
+}
+
+.wd-follow-icon {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 3px;
+}
+
+.fa-twitter, .fa-twitter-square {
+    color: #00aced
+}
+
+.wd-twitter-color {
+    color: #00aced
+}
+
+.wd-twitter-bg-color {
+    background-color: #00aced
+}
+
+.wd-bottom-left {
+    position: absolute;
+    bottom: 4px;
+    left: 8px;
+}
+
+.wd-text-over-picture-bl {
+    font-size: 2em;
+    color: white;
+}
