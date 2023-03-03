@@ -11,6 +11,15 @@ const PostItem = ({ post = {} }) => {
           />
         </div>
         <div className="col p-0 me-2">
+          <div
+            style={
+              post.retweet
+                ? { fontSize: "14px", marginLeft: "-20px", color: "gray" }
+                : { display: "none" }
+            }
+          >
+            <i className="bi bi-repeat text-secondary"></i> Trump Retuitted
+          </div>
           <div className="wd-flex-content-title row align-items-center">
             <div
               className="overflow-hidden col-auto ps-0 pe-0"
@@ -70,10 +79,7 @@ const PostItem = ({ post = {} }) => {
           <div className="wd-flex-content-article-react row">
             <a href="#" className="col-3 p-0 text-decoration-none">
               <div className="wd-flex-content-react-component col-3">
-                <i
-                  className="fa-regular fa-comment"
-                  style={{ color: "gray" }}
-                ></i>
+                <i className="bi bi-chat text-secondary"></i>
                 <div className="wd-flex-content-react-number">
                   {post.discussion}
                 </div>
@@ -81,28 +87,32 @@ const PostItem = ({ post = {} }) => {
             </a>
             <a href="#" className="col-3 p-0 text-decoration-none">
               <div className="wd-flex-content-react-component">
-                <i className="fas fa-retweet" style={{ color: "gray" }}></i>
+                <i className="bi bi-repeat text-secondary"></i>
                 <div className="wd-flex-content-react-number">{post.fwd}</div>
               </div>
             </a>
             <a href="#" className="col-3 p-0 text-decoration-none">
               <div className="wd-flex-content-react-component">
-                <i
-                  className="fa-regular fa-heart"
-                  style={{ color: "gray" }}
-                ></i>
+                <i className="bi bi-heart text-secondary"></i>
                 <div className="wd-flex-content-react-number">{post.likes}</div>
               </div>
             </a>
             <a href="#" className="col-3 p-0 text-decoration-none">
               <div className="wd-flex-content-react-component">
-                <i
-                  className="fa-solid fa-arrow-up-from-bracket"
-                  style={{ color: "gray" }}
-                ></i>
+                <i className="bi bi-box-arrow-up text-secondary"></i>
               </div>
             </a>
           </div>
+          <a
+            style={
+              post.show_thread
+                ? { textDecoration: "none" }
+                : { display: "none" }
+            }
+            href={post.show_thread}
+          >
+            Show This Thread
+          </a>
         </div>
       </div>
     </li>

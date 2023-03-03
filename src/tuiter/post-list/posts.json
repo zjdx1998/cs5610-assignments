@@ -11,7 +11,9 @@
     "picture_content": "According to the latest report, java is died and Rust is the best. What's your opinon? No matter what is your opinon, java sucks.",
     "discussion": 1024,
     "fwd": 21474,
-    "likes": 9999
+    "likes": 9999,
+    "retweet": true,
+    "show_thread": "https://twitter.com/explore"
   },
   {
     "_id": 2,
@@ -23,6 +25,7 @@
     "picture": "https://media.licdn.com/dms/image/C4E12AQGFzZtrQjRF_w/article-cover_image-shrink_720_1280/0/1623499150462?e=2147483647&v=beta&t=9DTX6oLHEaCoeq1H9TDo6xjEiyihCLB0-Mn1ukALWSY",
     "discussion": 4096,
     "fwd": 83647,
-    "likes": 12345
+    "likes": 12345,
+    "retweet": false
   }
 ]
