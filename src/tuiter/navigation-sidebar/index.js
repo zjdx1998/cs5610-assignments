@@ -11,7 +11,12 @@ const NavigationSidebar = () => {
   }
   return (
     <div className="list-group">
-      <a className="list-group-item">Tuiter</a>
+      <a className="list-group-item">
+        <div className="wd-nav-icon d-inline">
+          <i className="bi bi-twitter"></i>
+        </div>
+        Tuiter
+      </a>
       <Link
         to="/tuiter/home"
         className={`list-group-item ${active === "home" ? "active" : ""}`}
@@ -51,7 +56,8 @@ const NavigationSidebar = () => {
         </svg>
         Labs
       </Link>
-      <a
+      <Link
+        to="/tuiter/notifications"
         className={`list-group-item
                     ${active === "notifications" ? "active" : ""}`}
       >
@@ -64,8 +70,9 @@ const NavigationSidebar = () => {
           </g>
         </svg>
         Notifications
-      </a>
-      <a
+      </Link>
+      <Link
+        to="/tuiter/messages"
         className={`list-group-item
                     ${active === "messages" ? "active" : ""}`}
       >
@@ -78,8 +85,9 @@ const NavigationSidebar = () => {
           </g>
         </svg>
         Messages
-      </a>
-      <a
+      </Link>
+      <Link
+        to="/tuiter/bookmarks"
         className={`list-group-item
                     ${active === "bookmarks" ? "active" : ""}`}
       >
@@ -92,8 +100,9 @@ const NavigationSidebar = () => {
           </g>
         </svg>
         Bookmarks
-      </a>
-      <a
+      </Link>
+      <Link
+        to="/tuiter/lists"
         className={`list-group-item
                     ${active === "lists" ? "active" : ""}`}
       >
@@ -103,8 +112,9 @@ const NavigationSidebar = () => {
           </g>
         </svg>
         Lists
-      </a>
-      <a
+      </Link>
+      <Link
+        to="/tuiter/profile"
         className={`list-group-item
                     ${active === "profile" ? "active" : ""}`}
       >
@@ -117,8 +127,9 @@ const NavigationSidebar = () => {
           </g>
         </svg>
         Profile
-      </a>
-      <a
+      </Link>
+      <Link
+        to="/tuiter/more"
         className={`list-group-item
                     ${active === "more" ? "active" : ""}`}
       >
@@ -131,7 +142,7 @@ const NavigationSidebar = () => {
           </g>
         </svg>
         More
-      </a>
+      </Link>
     </div>
   );
 };
