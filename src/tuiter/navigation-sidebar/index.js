@@ -6,8 +6,9 @@ const NavigationSidebar = () => {
   const { pathname } = useLocation();
   const paths = pathname.split("/");
   let active = paths[2];
+  console.log(active);
   if (active === "" || active === undefined) {
-    active = "explore";
+    active = "home";
   }
   return (
     <div className="list-group">
