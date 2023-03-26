@@ -1,0 +1,15 @@
+[{
+  "_id": "123",
+  "firstName": "Jiandong (Jeromy)",
+  "lastName": "Zhang",
+  "handle": "@zjdx1998",
+  "profilePicture": "https://pbs.twimg.com/profile_images/1495868797642678272/6zuHyMGy_400x400.jpg",
+  "bannerPicture": "https://media.licdn.com/dms/image/D5616AQEI8iEZbJbhRw/profile-displaybackgroundimage-shrink_350_1400/0/1678737623270?e=1685577600&v=beta&t=gGKNjHII47ZrTn2lBg5EcfxGik_1XRaNbA_ag1Zdm5I",
+  "bio": "Software Engineer @ Apple, ex-SDE @ Google, Apple, Taichi, Tencent, Microsoft",
+  "website": "jeromy.site",
+  "location": "Seattle, WA",
+  "dateOfBirth": "February 5, 1998",
+  "dateJoined": "December, 2017",
+  "followingCount": 340,
+  "followersCount": 223
+}]

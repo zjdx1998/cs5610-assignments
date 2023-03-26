@@ -1,0 +1,70 @@
+.wd-profile-avatar {
+    margin-top: -80px;
+    border-radius: 50%;
+    height: 160px;
+    width: 160px;
+}
+
+.wd-edit-profile {
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
+
+}
+
+.wd-edit-profile .input_data {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.wd-edit-profile .input_data input {
+    display: block;
+    height: 50px;
+    width: 100%;
+    font-size: 16px;
+    border: 2px solid lightgray;
+}
+
+.wd-edit-profile .input_data textarea {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    border: 2px solid lightgray;
+    vertical-align: middle;
+}
+
+.wd-edit-profile .input_data label {
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    color: black;
+    font-size: 18px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.input_data input:focus,
+.input_data input:valid {
+    outline: 0;
+    /*border-bottom-color: gray;*/
+}
+
+.input_data input:focus~label,
+.input_data input:valid~label {
+    transform: translateY(-24px);
+    font-size: 12px;
+    color: gray;
+}
+
+.input_data textarea:focus,
+.input_data textarea:valid {
+    outline: 0;
+    /*border-bottom-color: gray;*/
+}
+
+.input_data textarea:focus~label,
+.input_data textarea:valid~label {
+    transform: translateY(-50px);
+    font-size: 12px;
+    color: gray;
+}

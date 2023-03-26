@@ -14,7 +14,7 @@ const PostSummaryItem = ({
       <div className="row">
         <div className="col-10">
           <div>
-            {post.userName} . {post.time}
+            {post.userName} · {post.time}
           </div>
           <div className="fw-bolder">{post.topic}</div>
           <div>{post.title}</div>
@@ -24,6 +24,7 @@ const PostSummaryItem = ({
             width={70}
             className="float-end rounded-3"
             src={`${post.image}`}
+            alt={"Image of Post"}
           />
         </div>
       </div>
