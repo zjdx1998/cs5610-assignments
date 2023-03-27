@@ -32,9 +32,12 @@ const ProfileView = ({
           <FontAwesomeIcon icon={faLongArrowLeft} />
         </div>
         <div className={"col-11 ps-0"}>
-          <h2>
-            {profile.firstName} {profile.lastName}
-          </h2>
+          <div>
+            <h4 className={"row"}>
+              {profile.firstName} {profile.lastName}
+            </h4>
+            <span className={"row"}>1234 Tuits</span>
+          </div>
         </div>
       </div>
       <div className={"row"}>
