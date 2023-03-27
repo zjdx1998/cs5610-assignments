@@ -36,7 +36,9 @@ const ProfileView = ({
             <h4 className={"row"}>
               {profile.firstName} {profile.lastName}
             </h4>
-            <span className={"row"}>1234 Tuits</span>
+            <span className={"row"} style={{ color: "gray" }}>
+              1234 Tuits
+            </span>
           </div>
         </div>
       </div>
