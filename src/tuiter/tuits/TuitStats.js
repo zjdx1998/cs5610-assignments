@@ -13,7 +13,6 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { useDispatch } from "react-redux";
-import { todoLikeToggle } from "./tuits-reducer";
 import { updateTuitThunk } from "../../services/tuits-thunks";
 
 const TuitItem = ({
@@ -34,9 +33,6 @@ const TuitItem = ({
   },
 }) => {
   const dispatch = useDispatch();
-  const toggleLike = (tuitStat) => {
-    dispatch(todoLikeToggle(tuitStat));
-  };
   return (
     <>
       <div className="row ms-5 mt-3">
@@ -76,7 +72,7 @@ const TuitItem = ({
               dispatch(
                 updateTuitThunk({
                   ...tuititem,
-                  dislikes: tuititem.dislikes - 1,
+                  dislikes: tuititem.dislikes + 1,
                 })
               );
             }}
