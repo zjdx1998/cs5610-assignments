@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import TuitStatItem from "./TuitStats";
 import { useDispatch } from "react-redux";
-import { deleteTuit } from "./tuits-reducer";
+import { deleteTuitThunk } from "../../services/tuits-thunks";
 
 const TuitItem = ({
   tuititem = {
@@ -24,7 +24,7 @@ const TuitItem = ({
 }) => {
   const dispatch = useDispatch();
   const deleteTuitHandler = (id) => {
-    dispatch(deleteTuit(id));
+    dispatch(deleteTuitThunk(id));
   };
 
   return (
@@ -52,7 +52,7 @@ const TuitItem = ({
           </span>{" "}
           <span className={"wd-time-handle-color"}>{tuititem.time}</span>
           <br />
-          <span>{tuititem.tweet}</span>
+          <span>{tuititem.tuit}</span>
         </div>
         <div className="col-1">
           <i className="fa-solid fa-ellipsis pe-2"></i>

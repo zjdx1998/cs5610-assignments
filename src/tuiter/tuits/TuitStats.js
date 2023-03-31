@@ -2,6 +2,7 @@ import {
   faHeart,
   faRetweet,
   faShareNodes,
+  faThumbsDown,
 } from "@fortawesome/free-solid-svg-icons";
 
 import {
@@ -13,6 +14,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { useDispatch } from "react-redux";
 import { todoLikeToggle } from "./tuits-reducer";
+import { updateTuitThunk } from "../../services/tuits-thunks";
 
 const TuitItem = ({
   tuititem = {
@@ -38,20 +40,29 @@ const TuitItem = ({
   return (
     <>
       <div className="row ms-5 mt-3">
-        <span className="col-3">
+        <span className="col">
           <a>
             <FontAwesomeIcon color={"darkgray"} icon={faComment} />
           </a>
           <span> {tuititem.comments}</span>
         </span>
-        <span className="col-3">
+        <span className="col">
           <a>
             <FontAwesomeIcon color={"darkgray"} icon={faRetweet} />
           </a>
           <span> {tuititem.retweets}</span>
         </span>
-        <span className="col-3">
-          <a onClick={() => toggleLike(tuititem)}>
+        <span className="col">
+          <a
+            onClick={() => {
+              dispatch(
+                updateTuitThunk({
+                  ...tuititem,
+                  likes: tuititem.likes + 1,
+                })
+              );
+            }}
+          >
             <FontAwesomeIcon
               color={tuititem.liked ? "red" : "darkgray"}
               icon={tuititem.liked ? faHeart : regularHeart}
@@ -59,7 +70,22 @@ const TuitItem = ({
           </a>
           <span> {tuititem.likes}</span>
         </span>
-        <span className="col-3">
+        <span className="col">
+          <a
+            onClick={() => {
+              dispatch(
+                updateTuitThunk({
+                  ...tuititem,
+                  dislikes: tuititem.dislikes - 1,
+                })
+              );
+            }}
+          >
+            <FontAwesomeIcon color={"darkgray"} icon={faThumbsDown} />
+          </a>
+          <span> {tuititem.dislikes}</span>
+        </span>
+        <span className="col">
           <a>
             <FontAwesomeIcon color={"darkgray"} icon={faShareNodes} />
           </a>
