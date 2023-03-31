@@ -1,0 +1,10 @@
+.wd-nav-icon {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 3px;
+    margin-right: 5px;
+}
+
+.list-group-item.active {
+    font-weight: bold;
+}
