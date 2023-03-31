@@ -60,8 +60,8 @@ const TuitItem = ({
             }}
           >
             <FontAwesomeIcon
-              color={tuititem.liked ? "red" : "darkgray"}
-              icon={tuititem.liked ? faHeart : regularHeart}
+              color={tuititem.likes > 0 ? "red" : "darkgray"}
+              icon={tuititem.likes > 0 ? faHeart : regularHeart}
             />
           </a>
           <span> {tuititem.likes}</span>
