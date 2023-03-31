@@ -7,6 +7,8 @@ const WhatsHappening = () => {
   const dispatch = useDispatch();
   const tuitClickHandler = () => {
     const newTuit = {
+      username: "Jeromy",
+      handle: "@jeromy",
       tuit: whatsHappening,
       time: "Just Now",
       avatar:

@@ -41,15 +41,13 @@ const TuitItem = ({
 
         <div className="col-10">
           <span>
-            <b>{tuititem.userName}</b>{" "}
+            <b>{tuititem.username}</b>{" "}
             <FontAwesomeIcon
               className={"wd-twitter-button"}
               icon={faCheckCircle}
             />
           </span>{" "}
-          <span className={"wd-time-handle-color"}>
-            {tuititem.userHandle} ·
-          </span>{" "}
+          <span className={"wd-time-handle-color"}>{tuititem.handle} ·</span>{" "}
           <span className={"wd-time-handle-color"}>{tuititem.time}</span>
           <br />
           <span>{tuititem.tuit}</span>
