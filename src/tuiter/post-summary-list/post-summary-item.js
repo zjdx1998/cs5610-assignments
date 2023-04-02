@@ -4,8 +4,7 @@ const PostSummaryItem = ({
     topic: "Space",
     username: "SpaceX",
     time: "2h",
-    title:
-      "Tesla Cybertruck lands on Mars and picks up the Curiosity rover on its 6' bed",
+    tuit: "Tesla Cybertruck lands on Mars and picks up the Curiosity rover on its 6' bed",
     avatar: "tesla.png",
   },
 }) => {
@@ -17,7 +16,7 @@ const PostSummaryItem = ({
             {post.username} · {post.time}
           </div>
           <div className="fw-bolder">{post.topic}</div>
-          <div>{post.title}</div>
+          <div>{post.tuit}</div>
         </div>
         <div className="col-2">
           <img
