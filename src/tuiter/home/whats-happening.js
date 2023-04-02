@@ -7,12 +7,15 @@ const WhatsHappening = () => {
   const dispatch = useDispatch();
   const tuitClickHandler = () => {
     const newTuit = {
+      replies: 0,
+      retuits: 0,
       username: "Jeromy",
       handle: "@jeromy",
       tuit: whatsHappening,
       time: "Just Now",
       avatar:
         "https://pbs.twimg.com/profile_images/1321163587679784960/0ZxKlEKB_400x400.jpg",
+      likes: 0,
       dislikes: 0,
     };
     dispatch(createTuitThunk(newTuit));
